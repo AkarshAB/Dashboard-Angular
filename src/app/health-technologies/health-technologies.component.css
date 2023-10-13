@@ -1,0 +1,9 @@
+body{
+  padding: 1.5rem;
+}
+.plainText{
+  @apply text-base
+}
+.headings{
+  @apply text-3xl font-sans text-violet-700
+}

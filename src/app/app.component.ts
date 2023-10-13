@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dashboard';
+
+  sidebar:boolean = true;
+  sidebarOpen () {
+    this.sidebar = !this.sidebar;
+  }
 }

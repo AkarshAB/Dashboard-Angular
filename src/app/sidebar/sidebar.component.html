@@ -1,0 +1,78 @@
+<body>
+  <h2 class="text-center mt-3 text-lg">Overview</h2>
+
+  <img class="p-3" src="https://cdn.dribbble.com/users/1973278/screenshots/6998323/hospital.gif" alt="">
+
+  <mat-expansion-panel class="expansionPanel" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Departments
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <a routerLink="departments" fragment="cardiology">
+      <p class="expansionText">Cardiology</p>
+    </a>
+    <a routerLink="departments" fragment="neurology">
+      <p class="expansionText">Neurology</p>
+    </a>
+    <a routerLink="departments" fragment="orthopedics">
+      <p class="expansionText">Orthopedics</p>
+    </a>
+    <a routerLink="departments" fragment="ophthalmology">
+      <p class="expansionText">Ophthalmology</p>
+    </a>
+    <a routerLink="departments" fragment="oncology">
+      <p class="expansionText">Oncology</p>
+    </a>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Health Technology
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <a routerLink="technologies" fragment="ctScan">
+      <p class="expansionText">CT scan</p>
+    </a>
+    <a routerLink="technologies" fragment="mriScan">
+      <p class="expansionText">Magnetic resonance imaging</p>
+    </a>
+    <a routerLink="technologies" fragment="xRay">
+      <p class="expansionText">X-ray</p>
+    </a>
+    <a routerLink="technologies" fragment="ultrasound">
+      <p class="expansionText">Ultrasound</p>
+    </a>
+    <a routerLink="technologies" fragment="petScan">
+      <p class="expansionText">PET</p>
+    </a>
+
+
+
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Find Your Doctor
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p class="expansionText">Dr. Jan Ahamed</p>
+    <p class="expansionText">Dr. Vandana Sudheer</p>
+    <p class="expansionText">Dr. Rohit K O</p>
+    <p class="expansionText">Dr. Anil N X</p>
+    <p class="expansionText">Dr. Diana George</p>
+    <p class="expansionText">Dr. Anup R Warrier</p>
+
+  </mat-expansion-panel><br>
+  <mat-divider></mat-divider>
+  
+  <div class="text-start ml-6 mt-3 mb-3">
+    <a routerLink="centres"><button class="btn w-100 text-sm">Our Centres</button></a>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="text-start ml-6 mt-3 mb-3">
+    <a routerLink="contactUs"><button class="btn w-100 text-sm">Contact Us</button></a>
+  </div>
+<mat-divider></mat-divider>

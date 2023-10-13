@@ -1,0 +1,6 @@
+.expansionText {
+  @apply text-gray-400 mb-3
+}
+body{
+overflow-y: hidden;
+}

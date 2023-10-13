@@ -1,0 +1,4 @@
+.plainText{
+  text-indent: 50px;
+  @apply text-base py-3 text-justify px-10
+}

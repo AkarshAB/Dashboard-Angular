@@ -1,0 +1,21 @@
+<p>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" (click)="menuIconClicked()" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span><a routerLink="/">Al-Sheba Hospital</a></span>
+    <span class="example-spacer"></span>
+    <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" matTooltip="Account">
+      <mat-icon>person</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item><mat-icon>person</mat-icon>Profile</button>
+      <button mat-menu-item><mat-icon>settings</mat-icon>Settings</button>
+      <button mat-menu-item><mat-icon>help</mat-icon>Help</button>
+      <button mat-menu-item><mat-icon>logout</mat-icon>Logout</button>
+    </mat-menu>
+    <button mat-icon-button class="example-icon mr-10" aria-label="Example icon-button with share icon" matTooltip="Help">
+      <mat-icon>help</mat-icon>
+    </button>
+  </mat-toolbar>
+</p>
